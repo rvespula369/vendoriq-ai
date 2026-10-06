@@ -1,0 +1,19 @@
+[project]
+name = "vendoriq-ai"
+version = "0.2.0"
+description = "AI-powered vendor intelligence and supplier analysis platform"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.14.2",
+    "gradio>=5.47.2",
+    "openai>=1.109.1",
+    "pydantic>=2.11.0",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
